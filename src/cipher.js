@@ -13,7 +13,7 @@ const cipher = {
       throw new TypeError("No... Debo establecer un rango de seguridad antes de encriptar el código")
     }
     if (!string) {
-      throw new TypeError("¿Cuáles serán las coordenadas..?")
+      throw new TypeError("¿Cuáles serán las coordenadas..?");
     }
     //Cambios------------------------------------------------
     /*if (!offset) {
@@ -34,7 +34,7 @@ const cipher = {
       throw new TypeError("No... Debo establecer un rango de seguridad antes de encriptar el código")
     }
     if (!string) {
-      throw new TypeError("¿Cuáles serán las coordenadas..?")
+      throw new TypeError("¿Cuáles serán las coordenadas..?");
     }
     /*if (!string)
     return "";*/

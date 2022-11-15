@@ -1,110 +1,70 @@
-body {
-    width: 1341px;
-    height: 941px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-#consoleNav
-#screenConsoleNav
-#topConsole
-#bottomConsole
-
-/* Grillas
-.div1 { grid-area: 1 / 1 / 6 / 6; } screen
-.div2 { grid-area: 1 / 4 / 4 / 6; } top console
-.div3 { grid-area: 4 / 1 / 6 / 6; } bottom console
-.div4 { grid-area: 3 / 4 / 6 / 6; } hacker console */
-/* Hacker Console
-.parent {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 6 / 6; }
-.div2 { grid-area: 1 / 1 / 4 / 6; }
-.div3 { grid-area: 4 / 1 / 5 / 6; }
-.div4 { grid-area: 5 / 1 / 6 / 6; }
-
-Input:
-.parent {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 2 / 3; } Msn
-.div2 { grid-area: 1 / 3 / 3 / 4; } Code
-.div3 { grid-area: 2 / 1 / 3 / 3; } EncryptMsn
-*/
-/*div {
-    margin: 0 auto;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}*/
+/*Grillas*/
 #frameHackerConsole {
-    grid-area: 3 / 4 / 6 / 6;
-    background-color: rgb(120, 159, 161);
-    border-radius: 100px;
-    border-color: rgb(120, 159, 161);
-    /*width: 1341px;
-    height: 941px;*/
-    margin: 0 auto;
-    padding: 0%;
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);*/
-    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-
-    /*position: relative;
-   left: 0%;
-   top: 0%;
-   bottom: 0;
-   right: 0;*/
 }
 
 #frameScreenHackerConsole {
-    /*width: 550px;
-    height: 500px;*/
-    /*border: 200px;*/
-    border-color: #6bc4d8;
-    background-color: #6bc4d8;
-    margin: 0 auto;
-    padding: 0%;
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);*/
-    box-shadow: 8px 8px 35px 0px rgb (0 0 0 /75%);
     grid-area: 1 / 1 / 6 / 6;
 }
 
 #screenHackerConsole {
     grid-area: 1 / 1 / 4 / 6;
+}
+
+#sectionButtonsCHC {
+    grid-area: 4 / 1 / 5 / 6;
+}
+
+#errorButton {
+    grid-area: 5 / 1 / 6 / 6;
+}
+
+#screenHackerConsole {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#introMsn {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#encryptCode {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+#encryptMsn {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+/*Grillas*/
+
+/*View*/
+#frameHackerConsole {
+    background-color: rgb(120, 159, 161);
+    border-radius: 100px;
+    border-color: rgb(120, 159, 161);
     margin: 0 auto;
     padding: 0%;
-    /*position: absolute;
-    left: 50%;
-    top: 250%;
-    transform: translate(-50%, -50%);*/
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+}
+
+#frameScreenHackerConsole {
+    background-color: var(--color-screenHackerConsole);
+    margin: 0 auto;
+    padding: 0%;
+    box-shadow: 8px 8px 35px 0px rgb (0 0 0 /75%);
+}
+
+#screenHackerConsole {
+    margin: 0 auto;
+    padding: 0%;
     --color-screenHackerConsole: #292b36;
 }
 
@@ -117,18 +77,26 @@ grid-row-gap: 0px;
 }
 
 #introMsn {
+    width: 100px;
+    height: 50px;
     border-top-left-radius: 2.5px;
     color: #00e1ff;
+    margin-top: 10px;
 }
 
 #encryptCode {
+    width: 50px;
+    height: 100px;
     border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
     color: #00e1ff;
+    margin-top: 10px;
 }
 
 #encryptMsn {
+    width: 100px;
+    height: 50px;
     border-bottom-left-radius: 2.5px;
-    border-bottom-right-radius: 2.5px;
     color: #00ff15;
 }
 
@@ -147,8 +115,6 @@ grid-row-gap: 0px;
     padding: 0;
     margin: 1rem;
     border-radius: 2%;
-    /*background-color: rgb(0, 204, 255);*/
-    grid-area: 4 / 1 / 5 / 6;
 }
 
 article {
@@ -159,8 +125,6 @@ article {
 }
 
 button {
-    /*width: 50px;
-    height: 50px;*/
     padding: 1rem;
     border: 0;
     border-radius: 50%;
@@ -175,19 +139,14 @@ button:active {
     box-shadow: 0px 3px 2.5px rgba(255, 0, 0, .5), 0px 3px 5px rgb(201, 0, 0);
     position: relative;
     top: 6px;
-    /*right: 6px;*/
 }
 
-;
-
 #errorButton {
-    /*height: 25px;
-    width: 25px;*/
     background: #4fc3dc;
     margin: 0%;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #4fc3dc44,
         0 0 0 50px #4fc3dc 0 0 0 100px #4fc3dc;
     animation: animated 15s linear infinite;
-    grid-area: 5 / 1 / 6 / 6;
 }
+/*View*/
