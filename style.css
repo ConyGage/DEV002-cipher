@@ -1,0 +1,152 @@
+/*Grillas*/
+#frameHackerConsole {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#frameScreenHackerConsole {
+    grid-area: 1 / 1 / 6 / 6;
+}
+
+#screenHackerConsole {
+    grid-area: 1 / 1 / 4 / 6;
+}
+
+#sectionButtonsCHC {
+    grid-area: 4 / 1 / 5 / 6;
+}
+
+#errorButton {
+    grid-area: 5 / 1 / 6 / 6;
+}
+
+#screenHackerConsole {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#introMsn {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#encryptCode {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+#encryptMsn {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+/*Grillas*/
+
+/*View*/
+#frameHackerConsole {
+    background-color: rgb(120, 159, 161);
+    border-radius: 100px;
+    border-color: rgb(120, 159, 161);
+    margin: 0 auto;
+    padding: 0%;
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+}
+
+#frameScreenHackerConsole {
+    background-color: var(--color-screenHackerConsole);
+    margin: 0 auto;
+    padding: 0%;
+    box-shadow: 8px 8px 35px 0px rgb (0 0 0 /75%);
+}
+
+#screenHackerConsole {
+    margin: 0 auto;
+    padding: 0%;
+    --color-screenHackerConsole: #292b36;
+}
+
+#screenHackerConsole input {
+    border: none;
+    outline: none;
+    padding: none;
+    margin: none;
+    background-color: var(--color-screenHackerConsole);
+}
+
+#introMsn {
+    width: 100px;
+    height: 50px;
+    border-top-left-radius: 2.5px;
+    color: #00e1ff;
+    margin-top: 10px;
+}
+
+#encryptCode {
+    width: 50px;
+    height: 100px;
+    border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    color: #00e1ff;
+    margin-top: 10px;
+}
+
+#encryptMsn {
+    width: 100px;
+    height: 50px;
+    border-bottom-left-radius: 2.5px;
+    color: #00ff15;
+}
+
+#controlsHackerConsole {
+    margin: 0 auto;
+    padding: 0%;
+    /*position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);*/
+}
+
+#sectionButtonsCHC div {
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    margin: 1rem;
+    border-radius: 2%;
+}
+
+article {
+    width: 60px;
+    height: 60px;
+    background-color: #292b36;
+    border-radius: 60px;
+}
+
+button {
+    padding: 1rem;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 3px 5px rgba(255, 0, 0, 1), 0px 3px 5px rgb(201, 0, 0);
+    -webkit-transition: all .1s ease;
+    -moz-transition: all 1s ease;
+    transition: all .1s ease;
+}
+
+button:active {
+    box-shadow: 0px 3px 2.5px rgba(255, 0, 0, .5), 0px 3px 5px rgb(201, 0, 0);
+    position: relative;
+    top: 6px;
+}
+
+#errorButton {
+    background: #4fc3dc;
+    margin: 0%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 0 50px #4fc3dc 0 0 0 100px #4fc3dc;
+    animation: animated 15s linear infinite;
+}
+/*View*/
